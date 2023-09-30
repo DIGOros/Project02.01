@@ -1,26 +1,43 @@
 import java.util.Scanner;
 
 public class Main {
-
-
     public static void main(String[] args) {
-        String line;
-        Scanner in = new Scanner(System.in);
-        System.out.print("Type something: ");
-        line = in.nextLine();
-        int x = 5;/*declaring int x*/
-        double y = 23.2;/*declaring double x*/
+        // Variables of different types
+        int numInt = 5;
+        double numDouble = 3.14;
+        char charVar = 'A';
+        boolean isJavaFun = true;
+        String greeting = "Hello, World!";
 
+        // Operations with numbers
+        double sum = numInt + numDouble;
+        int difference = numInt - (int) numDouble; // Type casting
+        double product = numInt * numDouble;
+        double division = numInt / numDouble;
 
-        String message = "Hello there!";//declaring string
-        System.out.println(x);
-        System.out.println(y);
-        System.out.println(x*y);
-        System.out.println(y-x);
-        System.out.println(message);
-        System.out.println("You typed: " + line);
+        System.out.println("Sum: " + sum);
+        System.out.println("Difference: " + difference);
+        System.out.println("Product: " + product);
+        System.out.println("Division: " + division);
 
+        // String operations
+        String fullName = "John" + " " + "Doe";
+        System.out.println("Full Name: " + fullName);
 
+        // Input/Output operations
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Enter your age: ");
+        int age = scanner.nextInt();
+        System.out.println("Your age is: " + age);
 
+        // Different comment types
+        // This is a single-line comment
+
+        /*
+        This is a
+        multi-line comment
+        */
+
+        scanner.close(); // Close the scanner to prevent resource leak
     }
 }
